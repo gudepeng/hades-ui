@@ -1,0 +1,38 @@
+{
+  "name": "hades-ui",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
+    "lib": "vue-cli-service build --target lib --name hades-ui --dest lib src/index.js && node ./build/i18n.js"
+  },
+  "main": "liib/hades-ui.umd.min.js",
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.0.0"
+  },
+  "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-plugin-router": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.1.2",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-i18n": "~0.6.1",
+    "vue-router": "^3.1.5",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "descriptiion": "this is a vue ui",
+  "license": "MIT"
+}
